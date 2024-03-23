@@ -29,9 +29,9 @@ export class UserApi {
         APPID: '828f58c7380ada7ba927a5be227e598c', // provided, after creating an account!
       };
     }
-    if (obj?.city === 'London') {
+    if (obj?.city === 'Maldives') {
       var data = {
-        q: obj.city + ',lond',
+        q: obj.city + ',mv',
         APPID: '828f58c7380ada7ba927a5be227e598c', // provided, after creating an account!
       };
     }
