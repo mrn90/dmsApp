@@ -5,32 +5,39 @@ export class UserApi {
   //  create user
   async GetWeatherUpdates(obj) {
     // make the api
-    // console.log('ApiConfig', ApiConfig);
     if (obj?.city === 'Karachi') {
       var data = {
-        // otp: obj.otp,
         q: obj.city + ',pk',
         APPID: '828f58c7380ada7ba927a5be227e598c', // provided, after creating an account!
       };
     }
     if (obj?.city === 'New York') {
       var data = {
-        // otp: obj.otp,
         q: obj.city + ',us',
         APPID: '828f58c7380ada7ba927a5be227e598c', // provided, after creating an account!
       };
     }
     if (obj?.city === 'London') {
       var data = {
-        // otp: obj.otp,
         q: obj.city + ',uk',
         APPID: '828f58c7380ada7ba927a5be227e598c', // provided, after creating an account!
       };
     }
     if (obj?.city === 'Sydney') {
       var data = {
-        // otp: obj.otp,
         q: obj.city + ',aus',
+        APPID: '828f58c7380ada7ba927a5be227e598c', // provided, after creating an account!
+      };
+    }
+    if (obj?.city === 'London') {
+      var data = {
+        q: obj.city + ',lond',
+        APPID: '828f58c7380ada7ba927a5be227e598c', // provided, after creating an account!
+      };
+    }
+    if (obj?.city === 'Houston') {
+      var data = {
+        q: obj.city + ',hou',
         APPID: '828f58c7380ada7ba927a5be227e598c', // provided, after creating an account!
       };
     }
@@ -50,11 +57,9 @@ export class UserApi {
       console.log('response ==>', response);
       if (response.status == 200) {
         let result = await response.json();
-        // console.log('we here in api', result);
         return result;
       } else if (response.status == 401) {
         let result = await response.json();
-        console.log('we here result', result);
         return result;
       }
     } catch (error) {

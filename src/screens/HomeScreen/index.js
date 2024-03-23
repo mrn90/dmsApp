@@ -23,6 +23,8 @@ const Home = ({route}) => {
     {label: 'New York', valueLat: '40.7128', valueLon: '74.0060'},
     {label: 'London', valueLat: '51.5072', valueLon: '0.1276'},
     {label: 'Sydney', valueLat: '33.8688', valueLon: '151.2093'},
+    {label: 'London', valueLat: '51.5072', valueLon: '0.1276'},
+    {label: 'Houston', valueLat: '29.7604', valueLon: '95.3698'},
   ]);
 
   const [city, setCity] = useState('');
